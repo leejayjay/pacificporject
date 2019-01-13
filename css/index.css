@@ -2,12 +2,25 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 54px;
+    height: 2000px;
+    background-color: rgb(244, 174, 82);
 }
-
+h1{
+    font-weight: bold;  
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .topnav {
     padding: 0 20%;
     overflow: hidden;
     background-color: rgb(252, 218, 67);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;;
 }
 
 .topnav img {
@@ -37,15 +50,89 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+.top_banner{
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: relative;
 }
+.top_banner_text{
+    float: right;
+    background-color: rgba(22,22,22,0.6);
+    position: absolute;
+    top: 30%;
+    right: 150px;
+    width: 350px;
+    color: #ddd
+}
+.about{
+    padding: 48px 0;
+}
+.aboutbox{
+    padding: 48px 40px;
+}
+.title{
+    width: 200px;
+    height: 80px;
+    border: 5px;
+    border-color: black;
+    border-radius: 50%; 
+    background-color:rgb(252, 150, 16);    
+    text-align: center;
+}
+.title h2{
 
-.sticky+.content {
-    padding-top: 60px;
+    line-height: 80px;
+}
+.abouttext{
+    float: left;
+    width: 40%;
+    padding: 20px 0;
+    padding-left: 100px;
+    position: relative;
+}
+.aboutpic{
+    width: 60%;
+    float: right;
+
+}
+.aboutpic img{
+    width: 250px;
+    height: 200px;
+    /* background-size: cover;
+    background-position: center;
+    background-image: url("../img/dog1.jpg"); */
+}
+.aboutbtn{
+    right: 50px;
+    bottom: 0px;
+    position: absolute;
+    background-color: rgb(255, 136, 0); 
+        display: inline-block;
+        padding: 6px 20px;
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+}
+.aboutbtn a{
+    text-decoration: none;
+    color: #111;
+}
+.parallax-window {
+    min-height: calc(100vh - 54px);
+    background: transparent;
 }
 
 .topnav a:hover {

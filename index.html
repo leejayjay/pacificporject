@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -18,7 +18,7 @@
         <div class="topnav_left"><img src="img/紀媽logo.jpg"></div>
         <div class="topnav_right">
             <div class="nav-tabs"><a href="#home"><i class="fas fa-paw"></i>首頁</a></div>
-            <div class="nav-tabs"><a href="#about"><i class="fas fa-paw"></i>關於紀媽</a></div>
+            <div class="nav-tabs"><a href="#about"><i class="fas fa-paw"></i>關於狗園</a></div>
             <div class="nav-tabs"><a href="#picture"><i class="fas fa-paw"></i>狗狗美照</a></div>
             <div class="nav-tabs"><a href="#contact"><i class="fas fa-paw"></i>聯絡我們</a></div>
 
@@ -30,27 +30,56 @@
         </div>
     </div>
     <div class="top_banner">
-        <img class="banner" src="img/紀媽與狗.jpg" alt="紀媽與狗">
+        <div class="banner parallax-window" data-parallax="scroll" data-speed="0.2" data-position-y="0px"
+            data-image-src="img/withdog.jpg" alt="紀媽與狗"></div>
         <div class="top_banner_text">
-
+            <h2>收養百隻浪犬的狗園面臨搬遷：一起為浪浪建立新家！</h2>
+            <p>我們是位於台中烏日的紀媽媽狗園，收養將近 100 隻的流浪犬；最近因為都更的關係，狗園原來承租的土地將被收回、不再續租。為了讓園中的浪浪能有個安身立命的新家，我們急需在年底完成新狗園的建設與搬遷。</p>
+        </div>
+    </div>
+    <div class="about container">
+        <h1>關於狗園</h1>
+        <div class="aboutbox">
+            <div class="title">
+                <h2>紀媽是誰</h2>
+            </div>
+            <div class="abouttext">
+                <p>紀媽媽開始收養流浪犬至今已 20 餘年，光是現階段在狗園中的浪浪就有 90
+                    隻，加上在外餵食的犬隻數更是超過上百——照護流浪犬所需的花費比大家想像的高出許多，一隻車禍浪犬的手術費往往就要價 10 萬以上，還不包含後續的各種開銷。
+                    收養近百隻浪犬的紀媽媽因為需要每天清潔狗寮、照顧重病的丈夫而沒有時間工作賺錢，所以不惜賣掉了三棟房子、投入超過千萬元的積蓄來守護狗園中的浪浪；儘管家人都勸她不要再繼續養下去，但是為了善盡對狗狗的責任，紀媽媽一直努力堅持到現在。
+                </p>
+            </div>
+            <div class="aboutpic" id="aboutpic1"><img src="/img/withdog1.jpg"></div>
+        </div>
+        <div class="aboutbox">
+            <div class="title">
+                <h2>園區狀態</h2>
+            </div>
+            <div class="abouttext">
+                <p>如今期限已經迫在眉睫，但我們只能初步完成圍籬的建設，目前還急需 130 萬元左右的經費，讓狗園新舍能繼續動工；我們將集資計畫分為 4 個階段目標：25 萬、75 萬、125 萬、175
+                    萬，而我們先開展第一階段25萬元計畫已經達標，接著以募齊讓狗狗能在冬天有充足的照明與飲水的水電，與簡易搭建狗舍費用的第二階段為目標，還麻煩大家繼續給予我們最大的支持。
+                </p>
+            </div>
+            <div class="aboutpic" id="aboutpic2"><img src="/img/withdog2.png"></div>
+        </div>
+        <div class="aboutbox">
+            <div class="title">
+                <h2>嘖嘖募資</h2>
+            </div>
+            <div class="abouttext">
+                <p>我們打算藉由推廣台灣在地原生的紅藜農產品籌措狗園的建設經費，帶大家認識台灣紅藜、並教導大家如何做出紅藜飯和一道簡單的紅藜料理；若您基於愛心覺得不需獲得回饋商品、單純支持我們的話，也可以在回饋備註欄註明！
+                </p>
+                <div class="aboutbtn"><a href="https://www.zeczec.com/projects/jimalovedog?r=53f376afff">前往募資網站</a></div>
+            </div>
+            <div class="aboutpic" id="aboutpic3"><img src="/img/dog1.jpg"></div>
         </div>
     </div>
 
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/popper.min.js" ></script>
+    <script src="/js/parallax.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
     <script>
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
     </script>
 </body>
 
