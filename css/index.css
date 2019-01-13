@@ -16,6 +16,9 @@ body {
     border-radius: 25px;
 
 } 
+.nav-tabs{
+    float: right;
+}
 .topnav_right{
     float: right;
 }
