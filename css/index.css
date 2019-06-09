@@ -6,20 +6,30 @@ body {
     height: 2000px;
     background-color: rgb(244, 174, 82);
 }
-
-h1 {
-    font-weight: bold;
+h1{
+    font-weight: bold;  
 }
-
-.container {
+.container{
     max-width: 1170px;
     margin: 0 auto;
-    padding: 48px 0;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 .fixed{
     position: fixed;
     top: 0;
     z-index: 999;
+=======
+.topnav {
+    padding: 0 20%;
+    overflow: hidden;
+    background-color: rgb(252, 218, 67);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;;
+>>>>>>> parent of 8698791... big change
 }
 #logo {
     width: 50px;
@@ -27,13 +37,27 @@ h1 {
     border-radius: 25px;
 }
 /* .topnav {
+=======
+
+=======
+>>>>>>> parent of 8698791... big change
+.topnav {
+>>>>>>> parent of 448d80f... navbar change
     padding: 0 20%;
     overflow: hidden;
     background-color: rgb(252, 218, 67);
+    position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 999;
+    z-index: 999;;
 }
+
+.topnav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
 .topnav_right {
     float: right;
 }
@@ -54,195 +78,143 @@ h1 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+<<<<<<< HEAD
+<<<<<<< HEAD
 } */
-
-.top_banner {
+=======
 }
-/* 
+<<<<<<< HEAD
+>>>>>>> parent of 448d80f... navbar change
+=======
+.top_banner{
+>>>>>>> parent of 8698791... big change
+
+    position: relative;
+}
+<<<<<<< HEAD
+
 .top_banner_text {
+=======
+}
+.top_banner{
+
+    position: relative;
+}
+.top_banner_text{
+>>>>>>> parent of 8698791... big change
+=======
+.top_banner_text{
+>>>>>>> parent of 8698791... big change
     float: right;
-    background-color: rgba(22, 22, 22, 0.6);
+    background-color: rgba(22,22,22,0.6);
     position: absolute;
     top: 30%;
     right: 150px;
     width: 350px;
     color: #ddd
+<<<<<<< HEAD
+<<<<<<< HEAD
 } */
+=======
+}
+<<<<<<< HEAD
+>>>>>>> parent of 448d80f... navbar change
 
 .aboutcontent{
     width: 100%;
     display: flex;
+=======
 }
-.aboutbox {
-    padding: 15px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center
+.about{
+    padding: 48px 0;
+>>>>>>> parent of 8698791... big change
 }
-
-.title {
+.aboutbox{
+    padding: 48px 40px;
+}
+=======
+.about{
+    padding: 48px 0;
+}
+.aboutbox{
+    padding: 48px 40px;
+}
+>>>>>>> parent of 8698791... big change
+.title{
     width: 200px;
     height: 80px;
-    margin-left: auto;
-    margin-right: auto;
     border: 5px;
     border-color: black;
-    border-radius: 50%;
-    background-color: rgb(252, 150, 16);
+    border-radius: 50%; 
+    background-color:rgb(252, 150, 16);    
     text-align: center;
-    line-height: 80px;
-
 }
+.title h2{
 
-.title h2 {
     line-height: 80px;
 }
-
-.abouttext {
-    width: 50%;
+.abouttext{
+    float: left;
+    width: 40%;
     padding: 20px 0;
     padding-left: 100px;
+    position: relative;
 }
+.aboutpic{
+    width: 60%;
+    float: right;
 
-.aboutpic {
-    width: 30%;
-    padding: 20px 15px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
-.aboutbox img {
+.aboutpic img {
     width: 400px;
     height: 260px;
     margin-left: auto;
     margin-right: auto;
+=======
+=======
+>>>>>>> parent of 8698791... big change
+.aboutpic img{
+    width: 250px;
+    height: 200px;
+    /* background-size: cover;
+    background-position: center;
+    background-image: url("../img/dog1.jpg"); */
+<<<<<<< HEAD
+>>>>>>> parent of 8698791... big change
+=======
+>>>>>>> parent of 8698791... big change
 }
-
-.aboutbtn {
+.aboutbtn{
     right: 50px;
     bottom: 0px;
-    /* position: absolute; */
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    position: absolute;
+    background-color: rgb(255, 136, 0); 
+        display: inline-block;
+        padding: 6px 20px;
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
 }
-
-.aboutbtn a {
+.aboutbtn a{
     text-decoration: none;
     color: #111;
-}
-.dogsgroup{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    padding: 0px 20px;
-}
-.dogpic{
-    border-radius: 15px;
-    border-style: solid;
-    border-width: medium;
-    margin: 10px;
-    width: 250px;
-    padding: 10px;
-    position: relative;
-}
-.dogpic a img{
-    height: 120px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.dogpic p{
-    margin-bottom: 40px;
-}
-.dogbtn{    
-    bottom: 10px;
-    right: 10px;
-    background-color: rgb(255, 136, 0);
-    position: absolute;
-    display: inline-block;
-    padding: 6px 20px;
-    margin-bottom: 0;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-.dogbtn a {
-    text-decoration: none;
-    color: #111;
-}
-.dogbtn a p{
-    margin: 0;
-}
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    position: relative;
-  }
-.feedbacktext{
-    position: absolute;
-    width: 20%;
-    right: 15%;
-    top: 150px;
-    background: rgba(22, 22, 22, 0.7);
-    border-radius: 4px;
-    
-}
-.feedbacktext p{
-    color: rgb(250, 248, 162);
-    font-size: 14px;
-    font-family: sans-serif;
-}
-.feedbacktext h6{
-    color: rgb(250, 248, 162);
-}
-.swiper-slide :nth-child(1){
-
 }
 .parallax-window {
     min-height: calc(100vh - 54px);
@@ -257,8 +229,7 @@ h1 {
 .topnav .icon {
     display: none;
 }
-
-.top_banner img {
+.top_banner img{
     width: 100%;
 }
 
