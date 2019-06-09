@@ -27,9 +27,32 @@
         };
     </script>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <div class="topnav" id="myTopnav">
-        <div class="topnav_left"><img src="img/logo.jpg"></div>
-        <div class="topnav_right">
+    <div class="top_banner" id="home">
+        <div class="banner parallax-window" data-parallax="scroll" data-speed="0.2" data-position-y="0px"
+            data-image-src="img/withdog.jpg" alt="紀媽與狗"></div>
+        <!-- <div class="top_banner_text">
+            <h2>收養百隻浪犬的狗園面臨搬遷：一起為浪浪建立新家！</h2>
+            <p>我們是位於台中烏日的紀媽媽狗園，收養將近 100 隻的流浪犬；最近因為都更的關係，狗園原來承租的土地將被收回、不再續租。為了讓園中的浪浪能有個安身立命的新家，我們急需在年底完成新狗園的建設與搬遷。</p>
+        </div> -->
+    </div>
+    
+    <div class="container nav navbar-default navbar-fixed-top" id="myTopnav">
+        <div class="topnav_left"><img src="img/logo.jpg" id="logo"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav topnav_right">
+                <a class="nav-item nav-link active" href="#home">首頁 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about">關於狗園</a>
+                <a class="nav-item nav-link" href="#picture">狗狗美照</a>
+                <a class="nav-item nav-link" href="#feedback">回饋介紹</a>
+                <a class="nav-item nav-link" href="#contactus">聯絡我們</a>
+              </div>
+            </div>
+          </nav>
+        <!-- <div class="topnav_right">
             <div class="nav-tabs"><a href="#home"><i class="fas fa-paw"></i>首頁</a></div>
             <div class="nav-tabs"><a href="#about"><i class="fas fa-paw"></i>關於狗園</a></div>
             <div class="nav-tabs"><a href="#picture"><i class="fas fa-paw"></i>狗狗美照</a></div>
@@ -41,15 +64,7 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
-    </div>
-    <div class="top_banner" id="home">
-        <div class="banner parallax-window" data-parallax="scroll" data-speed="0.2" data-position-y="0px"
-            data-image-src="img/withdog.jpg" alt="紀媽與狗"></div>
-        <div class="top_banner_text">
-            <h2>收養百隻浪犬的狗園面臨搬遷：一起為浪浪建立新家！</h2>
-            <p>我們是位於台中烏日的紀媽媽狗園，收養將近 100 隻的流浪犬；最近因為都更的關係，狗園原來承租的土地將被收回、不再續租。為了讓園中的浪浪能有個安身立命的新家，我們急需在年底完成新狗園的建設與搬遷。</p>
-        </div>
+        </div> -->
     </div>
         <div class="container" id="about">
             <div id="aboutbox">
@@ -69,18 +84,23 @@
                     <div class="col-lg-4 callout aboutbox">
                         <span class="icon icon-eye"></span>
                         <h2 class="title">園區狀態</h2>
-                        <p>
+                        <img class="aboutpic" src="/img/withdog2.png">
+                        <!-- <p>
                             我們將集資計畫分為 4 個階段目標：25 萬、75 萬、125 萬、175萬，而我們先開展第一階段25萬元計畫已經達標，接著以募齊讓狗狗能在冬天有充足的照明與飲水的水電，與簡易搭建狗舍費用的第二階段為目標，還麻煩大家繼續給予我們最大的支持。
-                        </p>
+                        </p> -->
                     </div>
                     <!-- col-lg-4 -->
             
                     <div class="col-lg-4 callout aboutbox">
                         <span class="icon icon-heart"></span>
                         <h2 class="title">呱呱募資</h2>
+                        <img class="aboutpic" src="/img/step.jpg">
                         <p>
-                            我們打算藉由推廣台灣在地原生的紅藜農產品籌措狗園的建設經費，帶大家認識台灣紅藜、並教導大家如何做出紅藜飯和一道簡單的紅藜料理；若您基於愛心覺得不需獲得回饋商品、單純支持我們的話，也可以在回饋備註欄註明！
+                            <a class="btn btn-success">Contact Us</a>
                         </p>
+                        <!-- <p>
+                            我們打算藉由推廣台灣在地原生的紅藜農產品籌措狗園的建設經費，帶大家認識台灣紅藜、並教導大家如何做出紅藜飯和一道簡單的紅藜料理；若您基於愛心覺得不需獲得回饋商品、單純支持我們的話，也可以在回饋備註欄註明！
+                        </p> -->
                     </div>
                     <!-- col-lg-4 -->
                 </div>
@@ -278,6 +298,22 @@
     <script src="js/popper.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(window).scrollTop(0);
+            })
+            var navheight = $("#myTopnav").offset().top;
+            $(window).scroll(function(){   
+                if ($(window).scrollTop() < navheight){
+                    $("#myTopnav").removeClass('fixed'); 
+                }else if ($(window).scrollTop() >= navheight){
+                    $("#myTopnav").addClass('fixed');
+                }
+            })
+            $("#menu").click(function(){
+
+            })
+        })
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 30,
